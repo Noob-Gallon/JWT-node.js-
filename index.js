@@ -3,6 +3,7 @@ const router_boardapi = require('./boardapi.js')
 const authMiddleware = require('./authmiddleware')
 const express = require('express')
 const app = express()
+const cookieParser = require('cookie-parser')
 
 // npm install --save body-parser
 app.use(express.urlencoded({extended:true}))
