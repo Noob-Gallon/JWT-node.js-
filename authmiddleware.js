@@ -29,6 +29,7 @@ const authMiddleware = async (req, res, next) => {
                         }
                     })
             })
+            // 이 부분은 필요함?
             req.tokenInfo = tokenInfo
             console.log('authmiddleware passed!')
             next()
